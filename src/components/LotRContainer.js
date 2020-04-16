@@ -9,7 +9,7 @@ import { Container, Button, Spinner } from "reactstrap";
 function LotrContainer(props) {
   //React.useEffect(props.fetchData, []);
   return (
-    <div style={{backgroundColor:"lightgrey"}}>
+    <div style={{ backgroundColor: "lightgrey" }}>
       <h1>Lord of the Rings Characters</h1>
       <Container xs="2">
         {props.isLoading ? (
@@ -31,7 +31,7 @@ function LotrContainer(props) {
 }
 
 export default connect(
-  state => {
+  (state) => {
     return { ...state };
   },
   { fetchData, fetchQuotes }

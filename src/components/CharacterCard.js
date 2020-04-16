@@ -11,7 +11,7 @@ import {
 } from "reactstrap";
 export default function Charactercard(props) {
   return (
-    <Card xs="2" style={{marginTop: "5px"}}>
+    <Card xs="2" style={{ marginTop: "5px" }}>
       <CardHeader>
         {" "}
         <CardTitle>{props.name}</CardTitle>
